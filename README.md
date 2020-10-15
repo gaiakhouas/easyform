@@ -35,13 +35,19 @@ https://www.udemy.com/user/request-api-client-popup/?display_type=popup
 Step 5 : fill .env file of easyform with the required informations as below :
 
 APP_KEY=YOUR_APP_KEY
+
 DB_DATABASE=YOUR_DATABASE_NAME
 
+
 STRIPE_PUBLIC_KEY=YOUR_STRIPE_PUBLIC_KEY
+
 STRIPE_PRIVATE_KEY=YOUR_STRIPE_PRIVATE_KEY
 
+
 UDEMY_CLIENT_ID=YOUR_CLIENT_ID
+
 UDEMY_CLIENT_SECRET=YOUR_CLIENT_SECRET
+
 
 Step 6 - lunch the project :
 run php artisan  serve
