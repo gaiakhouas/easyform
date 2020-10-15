@@ -26,7 +26,6 @@
                                         <td class="text-left">
                                             <small><a class="btn border"
                                                     href="{{ route('cart.destroy', $item->id) }}">Supprimer</a></small><br>
-                                            <small><a class="btn border" href="#">Enregistrer pour plus tard</a></small><br>
                                             <small><a class="btn border"
                                                     href="{{ route('wishlist.toWishlist', $item->id) }}">Ajouter à la liste
                                                     de souhaits</a></small>
