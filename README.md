@@ -24,15 +24,31 @@ run npm install
 
 run cp .env.example .env
 
+-------- FOR LOCAL DEPLOYMENT ONLY -------- 
 
-Step 3 - create an account in udemy and fill the form in the below link :
+Step 3 add a sll permission
+Download this file: http://curl.haxx.se/ca/cacert.pem
+Place this file in the C:/wamp64/bin/php/[your_last_php_version] folder
+Open php.iniand find this line:
+
+;curl.cainfo
+
+Change it to:
+
+curl.cainfo = "C:/wamp64/bin/php/[your_last_php_version]/cacert.pem"
+
+Save changes to php.ini, restart your local sever
+
+-------- END LOCAL DEPLOYMENT --------
+
+Step 4 - create an account in udemy and fill the form in the below link :
 https://www.udemy.com/user/request-api-client-popup/?display_type=popup
 Nb : You will receive your api keys under 48 hours.
 
-Step 4 - create a stripe account, signin and get the public and private keys with the link below :
+Step 5 - create a stripe account, signin and get the public and private keys with the link below :
 https://www.udemy.com/user/request-api-client-popup/?display_type=popup
 
-Step 5 : fill .env file of easyform with the required informations as below :
+Step 6 : fill .env file of easyform with the required informations as below :
 
 APP_KEY=YOUR_APP_KEY
 
@@ -49,7 +65,7 @@ UDEMY_CLIENT_ID=YOUR_CLIENT_ID
 UDEMY_CLIENT_SECRET=YOUR_CLIENT_SECRET
 
 
-Step 6 - lunch the project :
+Step 7 - lunch the project :
 run php artisan  serve
 
 Enjoy ! 
