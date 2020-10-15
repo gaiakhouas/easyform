@@ -44,14 +44,18 @@ Save changes to php.ini, restart your local sever
 
 -------- END LOCAL DEPLOYMENT --------
 
-Step 4 - create an account in udemy and fill the form in the below link :
+Step 4 - add a symbolic link to the storage
+
+run php artisan storage:link
+
+Step 5 - create an account in udemy and fill the form in the below link :
 https://www.udemy.com/user/request-api-client-popup/?display_type=popup
 Nb : You will receive your api keys under 48 hours.
 
-Step 5 - create a stripe account, signin and get the public and private keys with the link below :
+Step 6 - create a stripe account, signin and get the public and private keys with the link below :
 https://www.udemy.com/user/request-api-client-popup/?display_type=popup
 
-Step 6 - fill .env file of easyform with the required informations as below :
+Step 7 - fill .env file of easyform with the required informations as below :
 
 APP_KEY=YOUR_APP_KEY
 
@@ -68,7 +72,7 @@ UDEMY_CLIENT_ID=YOUR_CLIENT_ID
 UDEMY_CLIENT_SECRET=YOUR_CLIENT_SECRET
 
 
-Step 7 - lunch the project :
+Step 8 - lunch the project :
 run php artisan  serve
 
 Enjoy ! 
