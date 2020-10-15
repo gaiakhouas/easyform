@@ -17,8 +17,13 @@ Step 1 - clone the project
 run git clone https://github.com/pegase91/easyform.git
 
 Step 2 - update composer and npm
+
 run composer update
+
 run npm install
+
+run cp .env.example .env
+
 
 Step 3 - create an account in udemy and fill the form in the below link :
 https://www.udemy.com/user/request-api-client-popup/?display_type=popup
